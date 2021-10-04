@@ -47,7 +47,9 @@ const Header = () => {
                     <Col xs={ 6 } md={ 5 }>
                         <div className="mt-5 p-5 me-5 h-75 text-start">
                             <h1 className="text-dark mb-3">Sami's <span className="text-primary fw-bold">Educare</span></h1>
+                            <hr />
                             <h2 className="me-3 mb-4 text-dark">Learn for <span className="text-primary fw-bold">PASSION</span>, not for <span className="text-primary fw-bold">PROFESSION</span></h2>
+                            <hr />
                             <h3 className="text-dark">Your Ultimate <span className="text-primary fw-bold">E-learning</span> Journey Begins Here</h3>
                         </div>
                     </Col>
