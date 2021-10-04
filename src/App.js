@@ -9,6 +9,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import Login from './components/Login/Login';
 import Teachers from './components/Teachers/Teachers';
 
 function App () {
@@ -31,6 +32,9 @@ function App () {
           </Route>
           <Route exact path="/about">
             <About></About>
+          </Route>
+          <Route exact path="/login">
+            <Login></Login>
           </Route>
           <Route exact path="*">
             <ErrorPage></ErrorPage>

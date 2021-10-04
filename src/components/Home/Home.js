@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Button, Col, Form, FormControl, Row } from 'react-bootstrap';
 import coverImage from '../../images/cover.jpg';
 import useCourses from '../../Hooks/useCourses';
 import PremiumCourse from '../PremiumCourse/PremiumCourse';
@@ -31,19 +31,21 @@ const Home = () => {
                     </Col>
                 </Row>
             </header>
-            <hr className="text-secondary" />
-            <h1 className="text-center text-info bg-dark p-3 rounded-3">Let's <span className="text-warning fw-bold">Start</span> Learning Our <span className="text-warning fw-bold">Premium</span> Courses</h1>
-            <hr className="text-secondary" />
-            <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
-                {
-                    premiumCourses.map( course => <PremiumCourse
-                        key={ course.id }
-                        course={ course }>
-                    </PremiumCourse> )
-                }
-            </div>
-            <hr className="text-secondary mt-5" />
-            <h1 className="text-center text-info bg-dark p-3 rounded-3">Our <span className="text-warning fw-bold">Most Valuable</span> Instructors</h1>
+            <section>
+                <hr className="text-secondary" />
+                <h1 className="text-center text-info bg-dark p-3 rounded-3">Let's <span className="text-warning fw-bold">Start</span> Learning Our <span className="text-warning fw-bold">Premium</span> Courses</h1>
+                <hr className="text-secondary" />
+                <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
+                    {
+                        premiumCourses.map( course => <PremiumCourse
+                            key={ course.id }
+                            course={ course }>
+                        </PremiumCourse> )
+                    }
+                </div>
+                <hr className="text-secondary mt-5" />
+                <h1 className="text-center text-info bg-dark p-3 rounded-3">Our <span className="text-warning fw-bold">Most Valuable</span> Instructors</h1>
+            </section>
             <section className="m-5 container mx-auto">
                 <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
                     {
@@ -53,6 +55,18 @@ const Home = () => {
                         </Teacher> )
                     }
                 </div>
+            </section>
+            <section className="container mx-auto w-50 m-5 bg-dark p-5 text-warning">
+                <h2 className="mb-3">Subscribe Us</h2>
+                <Form className="">
+                    <FormControl
+                        type="email"
+                        placeholder="Email"
+                        className="mt-2"
+                        aria-label="Email"
+                    />
+                    <Button className="mt-3" variant="outline-warning">Subscribe</Button>
+                </Form>
             </section>
         </div>
     );

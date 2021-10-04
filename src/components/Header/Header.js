@@ -30,7 +30,7 @@ const Header = () => {
                         <NavDropdown.Item href="#action/3.5">Premium Courses</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
-                <Form className="d-flex">
+                <Form className="d-flex me-5">
                     <FormControl
                         type="search"
                         placeholder="Search Course Here"
@@ -39,6 +39,10 @@ const Header = () => {
                     />
                     <Button variant="outline-info">Search</Button>
                 </Form>
+                <Nav className="p-3">
+                    <Button variant="outline-info" className="me-3">Join for Free</Button>
+                    <NavLink className="mt-2 text-info text-decoration-none" to="/login">Login</NavLink>
+                </Nav>
             </Navbar>
         </header>
     );
