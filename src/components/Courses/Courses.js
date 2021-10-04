@@ -7,7 +7,7 @@ const Courses = () => {
 
     return (
         <section className="m-5 text-center">
-            <h2>We have only { courses.length } courses right now. Please stay tuned for more...</h2>
+            <h2>We have successfully launched <span className="text-primary fw-bold">{ courses.length }</span> courses. Please stay tuned for more...</h2>
             <div className="row row-cols-1 row-cols-md-3 g-5 m-5">
                 {
                     courses.map( course => <Course

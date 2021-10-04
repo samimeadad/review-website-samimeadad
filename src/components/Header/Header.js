@@ -1,6 +1,8 @@
 import React from 'react';
 import { Form, FormControl, Nav, Navbar, Button, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     return (
@@ -14,9 +16,10 @@ const Header = () => {
                 <Nav className="me-auto">
                     <NavLink className="me-3 text-info text-decoration-none" to="/home">Home</NavLink>
                     <NavLink className="me-3 text-info text-decoration-none" to="/courses">Courses</NavLink>
-                    <NavLink className="me-3 text-info text-decoration-none" to="/teachers">Teachers</NavLink>
+                    <NavLink className="me-3 text-info text-decoration-none" to="/teachers">Instructors</NavLink>
                     <NavLink className="me-3 text-info text-decoration-none" to="/about">About Us</NavLink>
                 </Nav>
+                <span className="text-info me-2"><FontAwesomeIcon icon={ faCartPlus } /></span>
                 <Nav className="me-3 text-info text-decoration-none">
                     <NavDropdown title={ <span className="text-info">Category</span> } id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Development</NavDropdown.Item>

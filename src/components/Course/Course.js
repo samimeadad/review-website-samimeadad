@@ -12,10 +12,11 @@ const Course = ( props ) => {
                     <p className="card-text">{ description }</p>
                     <p className="card-text"><b>Instructor:</b> { teacher }</p>
                     <p className="card-text"><b>Duration:</b> { duration }</p>
-                    <h3 className="card-text fw-bold">Price: ${ price }</h3>
+                    <h3 className="card-text fw-bold">Fee: ${ price }</h3>
                 </div>
                 <div className="card-footer">
-                    <Button className="w-100">Course Details</Button>
+                    <Button className="w-50 me-3">Details</Button>
+                    <Button className="w-25 btn-danger text-white">Buy</Button>
                 </div>
             </div>
         </div>
