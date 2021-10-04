@@ -6,7 +6,7 @@ const Course = ( props ) => {
     return (
         <div className="col" >
             <div className="card h-100 w-75 p-3 rounded-3">
-                <img src={ image } className="card-img-top img-fluid" alt="..." />
+                <img style={ { width: '400px', height: '200px' } } src={ image } className="card-img-top img-fluid" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title fw-bold text-primary">{ name }</h5>
                     <p className="card-text">{ description }</p>

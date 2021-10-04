@@ -7,6 +7,7 @@ import PremiumCourse from '../PremiumCourse/PremiumCourse';
 
 const Home = () => {
     const [ courses ] = useCourses();
+    const premiumCourses = courses.filter( course => course.premium === true )
 
     return (
         <div className="m-5">
@@ -26,15 +27,18 @@ const Home = () => {
                     </Col>
                 </Row>
             </header>
-            <h1 className="text-center text-info bg-dark p-3 rounded-3">Let's Start Learning Our Premium Courses</h1>
-            <div className="row row-cols-1 row-cols-md-3 g-5 m-5">
+            <hr className="text-secondary" />
+            <h1 className="text-center text-primary p-3 rounded-3">Let's Start Learning Our Premium Courses</h1>
+            <hr className="text-secondary" />
+            <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
                 {
-                    courses.map( course => <PremiumCourse
+                    premiumCourses.map( course => <PremiumCourse
                         key={ course.id }
                         course={ course }>
                     </PremiumCourse> )
                 }
             </div>
+            <hr className="text-secondary" />
         </div>
     );
 };

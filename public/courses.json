@@ -56,7 +56,7 @@
         "description": "Become an ethical hacker that can hack computer systems like black hat hackers and secure them like security experts.",
         "price": 23,
         "duration": "16 hours",
-        "premium": false,
+        "premium": true,
         "image": "https://newsdio.com/wp-content/uploads/2021/04/Featured-Image-1280x720.jpg"
     },
     {
