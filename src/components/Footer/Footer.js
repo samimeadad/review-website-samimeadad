@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="bg-dark text-center p-5">
             <h1 className="text-info"><span className="text-warning">SAMI'S</span> EDUCARE</h1>
-            <h6 className="text-info">LEARN FOR PASSION, NOT FOR PROFESSION</h6>
+            <h6 className="text-info">LEARN FOR <span className="text-warning">PASSION</span>, NOT FOR <span className="text-warning">PROFESSION</span></h6>
             <p className="text-info">Follow Us On:</p>
             <p>
                 <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><i aria-hidden="true" className="fa fa-facebook text-warning me-3" data-toggle="tooltip" title="Facebook"></i></a>
