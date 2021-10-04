@@ -1,16 +1,9 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
 import { Button } from 'react-bootstrap';
+import useCourses from '../../Hooks/useCourses.js';
 
 const Courses = () => {
-    const [ courses, setCourses ] = useState( [] );
-
-    useEffect( () => {
-        fetch( './courses.json' )
-            .then( res => res.json() )
-            .then( data => setCourses( data ) );
-    }, [] );
+    const [ courses ] = useCourses();
 
     return (
         <section className="m-5 text-center">
