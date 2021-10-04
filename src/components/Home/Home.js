@@ -2,10 +2,11 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import coverImage from '../../images/cover.jpg';
 import useCourses from '../../Hooks/useCourses';
+import PremiumCourse from '../PremiumCourse/PremiumCourse';
+
 
 const Home = () => {
     const [ courses ] = useCourses();
-    console.log( courses );
 
     return (
         <div className="m-5">
@@ -25,8 +26,15 @@ const Home = () => {
                     </Col>
                 </Row>
             </header>
-            <h1 className="text-center text-info bg-dark p-3 rounded-3">Let's Start Learning</h1>
-            
+            <h1 className="text-center text-info bg-dark p-3 rounded-3">Let's Start Learning Our Premium Courses</h1>
+            <div className="row row-cols-1 row-cols-md-3 g-5 m-5">
+                {
+                    courses.map( course => <PremiumCourse
+                        key={ course.id }
+                        course={ course }>
+                    </PremiumCourse> )
+                }
+            </div>
         </div>
     );
 };

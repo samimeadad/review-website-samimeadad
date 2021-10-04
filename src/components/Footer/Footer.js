@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -7,10 +8,10 @@ const Footer = () => {
             <h6 className="text-info">LEARN FOR <span className="text-warning">PASSION</span>, NOT FOR <span className="text-warning">PROFESSION</span></h6>
             <p className="text-info">Follow Us On:</p>
             <p>
-                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><i aria-hidden="true" className="fa fa-facebook text-warning me-3" data-toggle="tooltip" title="Facebook"></i></a>
-                <a href="https://www.twitter.com/" target="_blank" rel="noreferrer"><i aria-hidden="true" className="fa fa-twitter text-warning me-3" data-toggle="tooltip" title="Twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i aria-hidden="true" className="fa fa-linkedin text-warning me-3" data-toggle="tooltip" title="Linkedin"></i></a>
-                <a href="https://www.github.com/" target="_blank" rel="noreferrer"><i aria-hidden="true" className="fa fa-github text-warning me-3" data-toggle="tooltip" title="Github"></i></a>
+                <Link to={ { pathname: "https://www.facebook.com/" } } target="_blank" rel="noreferrer"><i aria-hidden="true" className="fa fa-facebook text-warning me-3" data-toggle="tooltip" title="Facebook"></i></Link>
+                <Link to={ { pathname: "https://www.twitter.com/" } } target="_blank" rel="noreferrer"><i aria-hidden="true" className="fa fa-twitter text-warning me-3" data-toggle="tooltip" title="Twitter"></i></Link>
+                <Link to={ { pathname: "https://www.linkedin.com/" } } target="_blank" rel="noreferrer"><i aria-hidden="true" className="fa fa-linkedin text-warning me-3" data-toggle="tooltip" title="Linkedin"></i></Link>
+                <Link to={ { pathname: "https://www.github.com/" } } target="_blank" rel="noreferrer"><i aria-hidden="true" className="fa fa-github text-warning me-3" data-toggle="tooltip" title="Github"></i></Link>
             </p>
             <p className="text-secondary">&copy;Sami Meadad Choudhury</p>
         </footer>

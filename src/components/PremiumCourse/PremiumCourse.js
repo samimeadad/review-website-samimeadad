@@ -1,8 +1,9 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 
-const Course = ( props ) => {
-    const { name, teacher, description, price, duration, image } = props.course;
+const PremiumCourse = ( props ) => {
+    const { name, teacher, description, price, duration, premium, image } = props.course;
+
     return (
         <div className="col" >
             <div className="card h-100 w-75 p-3 rounded-3">
@@ -22,4 +23,4 @@ const Course = ( props ) => {
     );
 };
 
-export default Course;
+export default PremiumCourse;
