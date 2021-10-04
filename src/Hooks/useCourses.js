@@ -8,7 +8,6 @@ const useCourses = () => {
             .then( res => res.json() )
             .then( data => setCourses( data ) );
     }, [] );
-    console.log( courses );
 
     //return courses state variable and setCourses function
     return [ courses, setCourses ];

@@ -1,8 +1,12 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import coverImage from '../../images/cover.jpg';
+import useCourses from '../../Hooks/useCourses';
 
 const Home = () => {
+    const [ courses ] = useCourses();
+    console.log( courses );
+
     return (
         <div className="m-5">
             <header className='m-5'>
@@ -21,7 +25,8 @@ const Home = () => {
                     </Col>
                 </Row>
             </header>
-            <h1 className="text-center text-info bg-dark p-3 rounded-3">Our Premium Courses</h1>
+            <h1 className="text-center text-info bg-dark p-3 rounded-3">Let's Start Learning</h1>
+            
         </div>
     );
 };

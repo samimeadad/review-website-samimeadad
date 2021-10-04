@@ -3,7 +3,7 @@
         "id": 101,
         "name": "Complete Web Development Course With Programming Hero",
         "teacher": "Jhankar Mahbub",
-        "description": "Pass the AWS Certified Solutions Architect Associate Certification SAA-C02. Complete Amazon Web Services Cloud training!",
+        "description": "Full-stack web development course from zero to mastery",
         "price": 50,
         "duration": "150 hours",
         "premium": true,

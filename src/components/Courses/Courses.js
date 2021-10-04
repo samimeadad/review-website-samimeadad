@@ -17,6 +17,7 @@ const Courses = () => {
                                 <div className="card-body">
                                     <h5 className="card-title fw-bold text-primary">{ course.name }</h5>
                                     <p className="card-text">{ course.description }</p>
+                                    <p className="card-text"><b>Duration:</b> { course.duration }</p>
                                     <h3 className="card-text fw-bold">Price: ${ course.price }</h3>
                                 </div>
                                 <div className="card-footer">
