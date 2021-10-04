@@ -14,32 +14,42 @@ import Teachers from './components/Teachers/Teachers';
 
 function App () {
   return (
+    // code for all router
     <div>
       <Router>
+        {/* router for header and navbar */ }
         <Header></Header>
         <Switch>
+          {/* Route for home page */ }
           <Route exact path="/home">
             <Home></Home>
           </Route>
+          {/* Route for home page */ }
           <Route exact path="/">
             <Home></Home>
           </Route>
+          {/* Route for courses page */ }
           <Route exact path="/courses">
             <Courses></Courses>
           </Route>
+          {/* Route for instructors page */ }
           <Route exact path="/teachers">
             <Teachers></Teachers>
           </Route>
+          {/* Route for about us page */ }
           <Route exact path="/about">
             <About></About>
           </Route>
+          {/* Route for login page */ }
           <Route exact path="/login">
             <Login></Login>
           </Route>
+          {/* Route for 404 error page */ }
           <Route exact path="*">
             <ErrorPage></ErrorPage>
           </Route>
         </Switch>
+        {/* Route for footer page */ }
         <Footer></Footer>
       </Router>
     </div>

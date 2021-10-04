@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// component for footer section
 const Footer = () => {
     return (
         <footer className="bg-dark text-center p-3">
             <h3 className="text-info"><span className="text-warning">SAMI'S</span> EDUCARE</h3>
             <h6 className="text-info">LEARN FOR <span className="text-warning">PASSION</span>, NOT FOR <span className="text-warning">PROFESSION</span></h6>
             <p className="text-info">Follow Us On:</p>
+
+            {/* fontawesome icon for social media and external link to them */ }
             <p>
                 <Link to={ { pathname: "https://www.facebook.com/" } } target="_blank" rel="noreferrer"><i aria-hidden="true" className="fa fa-facebook text-warning me-3" data-toggle="tooltip" title="Facebook"></i></Link>
                 <Link to={ { pathname: "https://www.twitter.com/" } } target="_blank" rel="noreferrer"><i aria-hidden="true" className="fa fa-twitter text-warning me-3" data-toggle="tooltip" title="Twitter"></i></Link>

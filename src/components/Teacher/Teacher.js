@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 
+// component for instructor page
 const Teacher = ( props ) => {
     const { name, age, country, students, image } = props.teacher;
     return (

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+// custom hook for teachers api call
 const useTeachers = () => {
     const [ teachers, setTeachers ] = useState( [] );
 

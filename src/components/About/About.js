@@ -1,8 +1,10 @@
 import React from 'react';
 import { Button, Form, FormControl } from 'react-bootstrap';
 
+// component for about us page
 const About = () => {
     return (
+        // a section for our identity and why people choose us
         <div className="container m-5 mx-auto">
             <h2 className="text-center mb-5 fw-bold">Why Sami's Educare?</h2>
             <div className="d-flex">
@@ -29,6 +31,8 @@ const About = () => {
                 </div>
             </div>
             <hr className="mt-5" />
+
+            {/* section for contact us */ }
             <div className="container mx-auto w-50 m-5 bg-success p-5 text-light">
                 <h2 className="mb-3">Contact Us</h2>
                 <Form className="">

@@ -8,6 +8,7 @@ import Teacher from '../Teacher/Teacher';
 
 
 const Home = () => {
+    // assign custom hook varibale for local use
     const [ courses ] = useCourses();
     const premiumCourses = courses.filter( course => course.premium === true );
     const [ teachers ] = useTeachers();
@@ -15,6 +16,7 @@ const Home = () => {
 
     return (
         <div className="m-5">
+            {/* header section - image and header tagline */ }
             <header className='m-5'>
                 <Row>
                     <Col xs={ 12 } md={ 7 }>
@@ -31,6 +33,8 @@ const Home = () => {
                     </Col>
                 </Row>
             </header>
+
+            {/* Premium courses section */ }
             <section>
                 <hr className="text-secondary" />
                 <h1 className="text-center text-info bg-dark p-3 rounded-3">Let's <span className="text-warning fw-bold">Start</span> Learning Our <span className="text-warning fw-bold">Premium</span> Courses</h1>
@@ -46,6 +50,8 @@ const Home = () => {
                 <hr className="text-secondary mt-5" />
                 <h1 className="text-center text-info bg-dark p-3 rounded-3">Our <span className="text-warning fw-bold">Most Valuable</span> Instructors</h1>
             </section>
+
+            {/* Premium instructors section */ }
             <section className="m-5 container mx-auto">
                 <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
                     {
@@ -56,6 +62,8 @@ const Home = () => {
                     }
                 </div>
             </section>
+
+            {/* Subscribe us section */ }
             <section className="container mx-auto w-50 m-5 bg-dark p-5 text-warning">
                 <h2 className="mb-3">Subscribe Us</h2>
                 <Form className="">

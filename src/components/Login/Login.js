@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Form, FormControl } from 'react-bootstrap';
 
+// component for login page
 const Login = () => {
     return (
         <div style={ { height: '26.4rem' } } className="container mx-auto w-25 m-5">

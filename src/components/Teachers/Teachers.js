@@ -2,6 +2,7 @@ import React from 'react';
 import useTeachers from '../../Hooks/useTeachers';
 import Teacher from '../Teacher/Teacher';
 
+// component for course data load via API from teachers.json file and send the props to teacher component
 const Teachers = () => {
     const [ teachers ] = useTeachers();
     return (

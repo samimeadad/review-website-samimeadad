@@ -2,6 +2,7 @@ import React from 'react';
 import useCourses from '../../Hooks/useCourses.js';
 import Course from '../Course/Course.js';
 
+// component for course data load via API from courses.json file and send the props to course component
 const Courses = () => {
     const [ courses ] = useCourses();
 

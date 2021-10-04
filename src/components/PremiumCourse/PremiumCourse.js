@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 
+// Component for premium courses displayed on the home page
 const PremiumCourse = ( props ) => {
     const { name, teacher, price, duration, image } = props.course;
 
@@ -15,7 +16,7 @@ const PremiumCourse = ( props ) => {
                     <h4 className="card-text fw-bold">Price: ${ price }</h4>
                 </div>
                 <div className="card-footer">
-                    <Button className="w-100">Buy</Button>
+                    <Button className="w-100">Buy Now</Button>
                 </div>
             </div>
         </div >
