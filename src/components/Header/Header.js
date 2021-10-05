@@ -53,7 +53,7 @@ const Header = () => {
                 {/* login and signup section */ }
                 <Nav className="p-3">
                     <Button variant="outline-info" className="me-3">Join for Free</Button>
-                    <NavLink className="mt-2 text-info text-decoration-none" to="/login">Login</NavLink>
+                    <NavLink className="mt-1 text-info text-decoration-none" to="/login">Login</NavLink>
                 </Nav>
             </Navbar>
         </header>

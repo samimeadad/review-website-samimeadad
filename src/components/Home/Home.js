@@ -8,10 +8,13 @@ import Teacher from '../Teacher/Teacher';
 
 
 const Home = () => {
-    // assign custom hook varibale for local use
+    // assign custom hook variable for courses
     const [ courses ] = useCourses();
+    //filter the premium courses for home page
     const premiumCourses = courses.filter( course => course.premium === true );
+    //assign the custom hook variable for instructors
     const [ teachers ] = useTeachers();
+    //filter the premium instructors for home page
     const premiumTeachers = teachers.filter( teacher => teacher.premium === true );
 
     return (
